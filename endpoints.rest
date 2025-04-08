@@ -3,19 +3,20 @@
 @type = grass
 
 ### Random pokemon
-GET {{url}}/random-pokemon
+GET {{url}}/pokemon/random
 
 ### Specific pokemon
 GET {{url}}/pokemon/5
 
 ### Random with type
-GET {{url}}/random-pokemon/{{type}}
+GET {{url}}/pokemon/random/{{type}}
 
 ### Add new pokemon
-POST {{url}}/add
+POST {{url}}/pokemon/add
+Content-Type: application/json
 
 {
-    "id": 100,
-    "name": "Ryan",
-    "type": "Instructor"
+    "id": 11,
+    "name": "Metapod",
+    "type": "Bug"
 }

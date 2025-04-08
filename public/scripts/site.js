@@ -11,8 +11,8 @@ const url = (() => {
     // ? `/api/v1/pokemon/${id}`
     // : '/api/v1/random-pokemon'
     if (searchType === 'pokemon') return `/api/v1/pokemon/${id}`
-    if (searchType === 'type') return `/api/v1/random-pokemon/${id}`
-    return '/api/v1/random-pokemon'
+    if (searchType === 'type') return `/api/v1/pokemon/random/${id}`
+    return '/api/v1/pokemon/random'
 })()
 
 const result = await fetch(url)
